@@ -24,6 +24,7 @@ ul {
 
 ul > * {
   display: inline-block;
+  font-weight: 600;
 }
 .debug {
   min-height: 100px;
@@ -45,6 +46,15 @@ ul > * {
   display: flex;
 }
 
+.heart {
+  font-size: 1.3rem;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: white;
+}
+
 /* # HEADER */
 
 header {
@@ -53,7 +63,7 @@ header {
 
 .page-header {
   background-color: rgb(255 105 0);
- 
+}
 
 .container-header {
   display: flex;
@@ -66,8 +76,11 @@ header {
 }
 
 .header-icons {
+  display: flex;
+  gap: 25px;
   color: white;
   cursor: pointer;
+  min-width: 115px;
 }
 
 .header-logo {
@@ -76,9 +89,41 @@ header {
   justify-content: center;
 }
 
-
 /* # MAIN */
 
 .main-page {
-  padding30px
-} 
+  padding: 30px;
+}
+
+.main-page .container .row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-top {
+  position: relative;
+}
+
+.badge-container {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+}
+
+.badge {
+  padding: 5px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: rgb(57, 192, 27);
+}
