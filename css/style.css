@@ -22,6 +22,15 @@ ul {
   list-style-type: none;
 }
 
+ul > * {
+  display: inline-block;
+}
+.debug {
+  min-height: 100px;
+  border: 2px dashed red;
+  background-color: #ff000022;
+}
+
 /* UTILS */
 
 .container {
@@ -31,3 +40,45 @@ ul {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.row {
+  display: flex;
+}
+
+/* # HEADER */
+
+header {
+  color: white;
+}
+
+.page-header {
+  background-color: rgb(255 105 0);
+ 
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.header-menu {
+}
+
+.header-icons {
+  color: white;
+  cursor: pointer;
+}
+
+.header-logo {
+  max-width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* # MAIN */
+
+.main-page {
+  padding30px
+} 
