@@ -32,6 +32,10 @@ ul > * {
   background-color: #ff000022;
 }
 
+h3 {
+  font-size: 1.1rem;
+}
+
 /* UTILS */
 
 .container {
@@ -126,4 +130,15 @@ header {
 
 .bg-green {
   background-color: rgb(57, 192, 27);
+}
+
+/* # FOOTER */
+
+.page-footer {
+  background-color: hsl(0deg 0% 10.2%);
+  color: white;
+}
+
+.page-footer .container .row {
+  justify-content: space-between;
 }
