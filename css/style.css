@@ -22,10 +22,10 @@ ul {
   list-style-type: none;
 }
 
-ul > * {
+/* ul > * {
   display: inline-block;
   font-weight: 600;
-}
+} */
 .debug {
   min-height: 100px;
   border: 2px dashed red;
@@ -50,14 +50,14 @@ h3 {
   display: flex;
 }
 
-.heart {
+/* .heart {
   font-size: 1.3rem;
   padding: 10px;
   position: absolute;
   top: 5px;
   right: 0;
   background-color: white;
-}
+} */
 
 /* # HEADER */
 
@@ -77,14 +77,19 @@ header {
 }
 
 .header-menu {
+  width: calc(100% / 3);
+}
+
+.header-menu li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .header-icons {
   display: flex;
-  gap: 25px;
-  color: white;
-  cursor: pointer;
-  min-width: 115px;
+  width: calc(100% / 3);
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .header-logo {
@@ -104,17 +109,14 @@ header {
   justify-content: space-between;
 }
 
-.product {
+.card {
   width: 30%;
-}
-
-.product-top {
   position: relative;
 }
 
 .badge-container {
   position: absolute;
-  bottom: 55px;
+  bottom: 100px;
   left: 0;
 }
 
@@ -130,6 +132,31 @@ header {
 
 .bg-green {
   background-color: rgb(57, 192, 27);
+}
+
+.card .heart {
+  font-size: 1.3rem;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: white;
+}
+
+.card-hover {
+  display: none;
+}
+
+.card:hover .card-hover {
+  display: block;
+}
+
+.card:hover .card-top {
+  display: none;
+}
+
+.card:hover .heart {
+  color: red;
 }
 
 /* # FOOTER */
